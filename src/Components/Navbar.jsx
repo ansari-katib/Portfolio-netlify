@@ -8,6 +8,14 @@ function Navbar() {
     setIsOpen(!isOpen); // Toggle the mobile menu visibility
   };
 
+  const navLinks = [
+    { to: "/", label: "Home" },
+    { to: "/education", label: "Education" },
+    { to: "/experience", label: "Experience" },
+    { to: "/projects", label: "Projects" },
+  ];
+
+
   return (
     <>
       <div className="flex justify-center items-center bg-black  ">
@@ -17,18 +25,15 @@ function Navbar() {
           <div className='flex justify-between items-center' >
 
             <div className="hidden m-6 sm:flex justify-center items-center gap-4 col-span-3">
-              <NavLink className={({ isActive }) => (isActive ? "text-indigo-500" : "text-white")} to="/">
-                <li className="list-none text-lg font-semibold">Home</li>
-              </NavLink>
-              <NavLink className={({ isActive }) => (isActive ? "text-indigo-500" : "text-white")} to="/education">
-                <li className="list-none text-lg font-semibold">Education</li>
-              </NavLink>
-              <NavLink className={({ isActive }) => (isActive ? "text-indigo-500" : "text-white")} to="/experience">
-                <li className="list-none text-lg font-semibold">Experience</li>
-              </NavLink>
-              <NavLink className={({ isActive }) => (isActive ? "text-indigo-500" : "text-white")} to="/Projects">
-                <li className="list-none text-lg font-semibold">Projects</li>
-              </NavLink>
+              {navLinks.map(({ to, label }) => (
+                <NavLink
+                  key={to}
+                  className={({ isActive }) => (isActive ? "text-indigo-500" : "text-white")}
+                  to={to}
+                >
+                  <li className="list-none text-lg font-semibold">{label}</li>
+                </NavLink>
+              ))}
             </div>
 
             <div className="flex justify-center items-center gap-2">

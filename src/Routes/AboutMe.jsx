@@ -1,8 +1,12 @@
 import React from "react";
-import image from "../assets/myImg.jpg"
+import image from "../assets/myImg2.png"
 import { Link } from "react-router-dom";
 
 function AboutMe() {
+
+  const skills = ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js', 'MongoDB', 'Express.js', 'Git', 'Core Java'];
+
+
   return (
     <section id="about-me" className=" h-full py-16 bg-black ">
       <div className="container mx-auto text-center">
@@ -47,30 +51,15 @@ function AboutMe() {
             <div className="mt-6">
               <h3 className="text-2xl font-semibold text-indigo-600 mb-4">Skills & Technologies</h3>
               <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 text-gray-700">
-                <li className="bg-white p-4 rounded-lg shadow-md text-center">
-                  <h4 className="font-bold text-indigo-600">HTML</h4>
-                </li>
-                <li className="bg-white p-4 rounded-lg shadow-md text-center">
-                  <h4 className="font-bold text-indigo-600">CSS</h4>
-                </li>
-                <li className="bg-white p-4 rounded-lg shadow-md text-center">
-                  <h4 className="font-bold text-indigo-600">JavaScript</h4>
-                </li>
-                <li className="bg-white p-4 rounded-lg shadow-md text-center">
-                  <h4 className="font-bold text-indigo-600">React</h4>
-                </li>
-                <li className="bg-white p-4 rounded-lg shadow-md text-center">
-                  <h4 className="font-bold text-indigo-600">Node.js</h4>
-                </li>
-                <li className="bg-white p-4 rounded-lg shadow-md text-center">
-                  <h4 className="font-bold text-indigo-600">MongoDB</h4>
-                </li>
-                <li className="bg-white p-4 rounded-lg shadow-md text-center">
-                  <h4 className="font-bold text-indigo-600">Express.js</h4>
-                </li>
-                <li className="bg-white p-4 rounded-lg shadow-md text-center">
-                  <h4 className="font-bold text-indigo-600">Git</h4>
-                </li>
+                {skills.map((item, index) => {
+                  return (
+                    <li className="bg-white p-4 rounded-lg shadow-md text-center" key={index}>
+                      <h4 className="font-bold text-indigo-600">{item}</h4>
+                    </li>
+                  )
+                }
+                )}
+
               </ul>
             </div>
           </div>

@@ -53,7 +53,7 @@ function Contact() {
   });
 
   return (
-    <section id="contact" className="py-12 bg-gray-400 relative">
+    <section id="contact" className="py-12 bg-gray-800 dark:bg-gray-900 relative">
       <div className="absolute top-2 left-4">
         {/* Back to Home Button */}
         <Link
@@ -64,17 +64,17 @@ function Contact() {
         </Link>
       </div>
 
-      <h2 className="text-3xl font-bold text-center text-indigo-600 mb-8">
+      <h2 className="text-3xl font-bold text-center text-indigo-600 dark:text-indigo-400 mb-8">
         Contact Me
       </h2>
       <div className="container mx-auto flex flex-col items-center">
         {/* Contact Form */}
         <form
           onSubmit={handleSubmit}
-          className="bg-white p-6 rounded-lg shadow-lg w-full max-w-md"
+          className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg w-full max-w-md"
         >
           <div className="mb-4">
-            <label htmlFor="name" className="block text-gray-700 font-medium">
+            <label htmlFor="name" className="block text-gray-700 dark:text-gray-300 font-medium">
               Your Name
             </label>
             <input
@@ -86,7 +86,7 @@ function Contact() {
               onChange={handleChange}
               onBlur={handleBlur}
               required
-              className="mt-2 p-3 w-full border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              className="mt-2 p-3 w-full border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-gray-700 dark:text-white"
             />
             {errors.name && touched.name && (
               <p className="text-red-500">{errors.name}</p>
@@ -94,7 +94,7 @@ function Contact() {
           </div>
 
           <div className="mb-4">
-            <label htmlFor="email" className="block text-gray-700 font-medium">
+            <label htmlFor="email" className="block text-gray-700 dark:text-gray-300 font-medium">
               Your Email
             </label>
             <input
@@ -106,7 +106,7 @@ function Contact() {
               onChange={handleChange}
               onBlur={handleBlur}
               required
-              className="mt-2 p-3 w-full border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              className="mt-2 p-3 w-full border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-gray-700 dark:text-white"
             />
             {errors.email && touched.email && (
               <p className="text-red-500">{errors.email}</p>
@@ -114,7 +114,7 @@ function Contact() {
           </div>
 
           <div className="mb-4">
-            <label htmlFor="subject" className="block text-gray-700 font-medium">
+            <label htmlFor="subject" className="block text-gray-700 dark:text-gray-300 font-medium">
               Subject
             </label>
             <input
@@ -126,7 +126,7 @@ function Contact() {
               onChange={handleChange}
               onBlur={handleBlur}
               required
-              className="mt-2 p-3 w-full border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              className="mt-2 p-3 w-full border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-gray-700 dark:text-white"
             />
             {errors.subject && touched.subject && (
               <p className="text-red-500">{errors.subject}</p>
@@ -134,7 +134,7 @@ function Contact() {
           </div>
 
           <div className="mb-4">
-            <label htmlFor="message" className="block text-gray-700 font-medium">
+            <label htmlFor="message" className="block text-gray-700 dark:text-gray-300 font-medium">
               Message
             </label>
             <textarea
@@ -146,7 +146,7 @@ function Contact() {
               onBlur={handleBlur}
               required
               rows="4"
-              className="mt-2 p-3 w-full border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              className="mt-2 p-3 w-full border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-gray-700 dark:text-white"
             />
             {errors.message && touched.message && (
               <p className="text-red-500">{errors.message}</p>
