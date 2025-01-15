@@ -16,7 +16,7 @@ function Home() {
             <img
               className="myimg rounded-lg h-[16rem] sm:h-[18rem] md:h-[22rem] lg:h-[24rem] w-auto object-cover"
               src={MyImg}
-              alt="Kaitb Ansari"
+              alt="Katib Ansari"
             />
           </div>
         </div>
@@ -25,11 +25,11 @@ function Home() {
         <div className="left mx-auto md:ml-10 text-center md:text-left">
           <h1 className="heading mb-6 text-3xl md:text-4xl lg:text-5xl font-bold overflow-hidden whitespace-nowrap border-r-4 border-indigo-600 pr-4 ">
             Hello there, my name is <br />
-            <span className="text-indigo-600 font-extrabold animate-typing">Kaitb Ansari</span>
+            <span className="text-indigo-600 font-extrabold animate-typing">Katib Ansari</span>
           </h1>
 
           <p className="text-lg sm:text-base lg:text-lg text-gray-400 mb-4">
-            Hi, I'm <span className="font-bold text-gray-300">Kaitb Ansari</span>, a passionate and dedicated software developer with a strong foundation in web development technologies like React, Node.js, and MongoDB. I love creating interactive and user-friendly web applications that help solve real-world problems.
+            Hi, I'm <span className="font-bold text-gray-300">Katib Ansari</span>, a passionate and dedicated software developer with a strong foundation in web development technologies like React, Node.js, and MongoDB. I love creating interactive and user-friendly web applications that help solve real-world problems.
           </p>
           <p className="text-lg sm:text-base lg:text-lg text-gray-400 mb-4">
             I am currently pursuing my BSc in Computer Science and have been building various projects using modern web development frameworks. I enjoy collaborating on projects, learning new technologies, and continuously improving my skills.
