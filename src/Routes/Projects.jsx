@@ -7,6 +7,7 @@ import tour_travel_image from "../assets/tour_travel.png";
 import chat_app_image from "../assets/chat_app.png";
 import resturant_app_image from "../assets/resturant_app.png";
 import chatify from '../assets/chatify.png'
+import e_comerce from "../assets/e_commerce.png";
 
 // React Icons
 import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJsSquare, FaGitAlt } from "react-icons/fa";
@@ -91,7 +92,36 @@ function Projects() {
       ],
       link: "https://stream-web-chat-app-1.onrender.com/",
       img: chatify,
+    },
+    {
+      title: "Mern E-Commerce app",
+      description:
+        "A full-stack E-Commerce application built with the MERN stack, featuring secure user authentication, product management, and a seamless shopping experience. The backend is powered by Node.js, Express, and MongoDB with Mongoose for database operations. Authentication and authorization are handled using JWT and bcrypt for security. Cloudinary is integrated for image storage, while Stripe powers the payment gateway. On the frontend, React with React Router ensures smooth navigation, Zustand manages global state, and Tailwind CSS with ShadCN provides a modern responsive UI. Additional tools like Axios, React Hot Toast, Framer Motion, and Redis caching enhance performance and user experience.",
+      techStack: [
+        "React.js",
+        "Express.js",
+        "React Router",
+        "Zustand",
+        "Tailwind CSS",
+        "Lucide Icons",
+        "React Icons",
+        "React Hot Toast",
+        "Axios",
+        "Node.js",
+        "MongoDB",
+        "Mongoose",
+        "bcrypt",
+        "dotenv",
+        "jsonwebtoken",
+        "Framer Motion",
+        "cloudinary",
+        "radis",
+        "stripe",
+      ],
+      link: "https://mern-ecommerce-1-1jio.onrender.com",
+      img: e_comerce,
     }
+
   ];
 
   const iconMap = {
